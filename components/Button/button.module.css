@@ -1,0 +1,8 @@
+.button-primary {
+  @apply bg-blue-500
+    rounded-md
+    text-white
+    w-full
+    max-w-fit
+    p-2;
+}
