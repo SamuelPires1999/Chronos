@@ -1,5 +1,5 @@
 {
-  "name": "next-tailwind-practices",
+  "name": "chronos",
   "private": true,
   "scripts": {
     "dev": "next dev",
