@@ -1,0 +1,26 @@
+.button-primary {
+  @apply min-w-fit
+    bg-blue-500
+    text-white
+    py-2
+    px-3
+    rounded-md;
+}
+
+.button-secondary {
+  @apply min-w-fit
+    bg-gray-300
+    text-gray-600
+    py-2
+    px-3
+    rounded-md;
+}
+
+.button-danger {
+  @apply min-w-fit
+    bg-red-500
+    text-white
+    py-2
+    px-3
+    rounded-md;
+}
