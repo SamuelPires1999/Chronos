@@ -7,6 +7,7 @@ const Home: NextPage = () => {
       <Button label='Button Variant primary' variant='primary' />
       <Button label='Button Variant secondary' variant='secondary' />
       <Button label='Button Variant danger' variant='danger' />
+      <Button label='Button with the default variant (no variant passed as props)'/>
       <div className='max-w-3xl w-full'>
         <Button label='Button With full width of its container' variant='primary' fullWidth />
       </div>
