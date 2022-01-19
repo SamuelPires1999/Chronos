@@ -2,25 +2,26 @@ import css from './button.module.css'
 
 type ButtonProps = {
     label: string,
-    variant: 'primary' | 'secondary' | 'danger',
+    variant?: 'primary' | 'secondary' | 'danger',
+    fullWidth?: boolean
 }
 
-const getVariant = (variant: string) => {
+const getVariant = (variant: string | undefined) => {
     switch (variant) {
         case 'primary':
-            return 'button-primary'
+            return css['button-primary']
         case 'secondary':
-            return 'button-secondary'
+            return css['button-secondary']
         case 'danger':
-            return 'button-danger'           
+            return css['button-danger']         
         default:
-            return 'button-primary';
+            return css['button-primary'];
     }
 }
 
-const Button = ({label, variant}: ButtonProps) => {
+const Button = ({label, variant, fullWidth = false}: ButtonProps) => {
     return(
-        <div className={css[getVariant(variant)]}>
+        <div className={[css['button-base'], getVariant(variant), fullWidth && 'w-full text-center'].join(' ')}>
             {label}
         </div>
     )
